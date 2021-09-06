@@ -27,3 +27,34 @@ My goal is to prepare myself for basic training in the JavaScript / Front-end Co
 - Git
 - GitHub
 - WebStorm
+
+## Code examples
+
+```typescript
+const binarySearch = (n: number, arr: number[], start: number = 0, end: number = arr.length - 1): number => {
+    let indexMiddle = Math.floor((start + end) / 2)
+    let middleNumber = arr[indexMiddle];
+    if (start > end) {
+        return -1
+    }
+    if (n > middleNumber) {
+        return binarySearch(n, arr, indexMiddle + 1, end)
+    }
+    if (n < middleNumber) {
+        return binarySearch(n, arr, start, indexMiddle - 1)
+    }
+    return indexMiddle
+}
+```
+## Education
+
+> I have a bachelor's degree in psychology ( Tambov State University named after G.R.Derzhavin ), and I also have certificates of completion of the following courses:
+- [Coursera: Basics of HTML and CSS](https://www.coursera.org/learn/snovy-html-i-css?specialization=razrabotka-interfeysov)
+- [Coursera: Subtleties of layout](https://www.coursera.org/learn/tonkosti-verstki?specialization=razrabotka-interfeysov)
+- [Coursera: JavaScript, part 1: basics and functions](https://www.coursera.org/learn/javascript-osnovy-i-funktsii?specialization=razrabotka-interfeysov)
+- [Coursera: JavaScript, part 2: prototypes and asynchrony](https://www.coursera.org/learn/javascript-prototipy?specialization=razrabotka-interfeysov)
+
+## English
+
+> A the moment my level of English is A0, but in the near future I want to improve it
+
