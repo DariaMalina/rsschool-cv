@@ -13,8 +13,9 @@
     <div class="personal_information">
         <header class="photo"><img src="image/photo_2021-04-22%2016.27.37.jpeg" alt="my-photo" class="photo"></header>
         <article class="contact">
+            <h3 class="nav_title">Contacts</h3>
             <nav class="contact_navigation nav">
-                <h3 class="nav_title">Contacts</h3>
+
                 <ul class="nav_list">
                     <li class="nav_elem elem">
                         <p class="elem_title">Email:</p>
@@ -127,17 +128,23 @@
                 </div>
                 <p>Well, a piece of algorithms:</p>
                 <pre class="code_styling"> <code>
-<span class="purple">const</span> <span class="blue">binarySearch</span> = (<span class="orange">n</span>, <span class="orange">arr</span>, <span class="orange">start</span>, <span class="orange">end</span>: ) => {
-    <span class="purple">let</span> indexMiddle = <span class="red">Math</span>.<span class="blue">floor</span>((<span class="orange">start</span> + <span class="orange">end</span>) / <span class="orange">2</span>)
+<span class="purple">const</span> <span class="blue">binarySearch</span> = (<span class="orange">n</span>, <span
+                        class="orange">arr</span>, <span class="orange">start</span>, <span class="orange">end</span>: ) => {
+    <span class="purple">let</span> indexMiddle = <span class="red">Math</span>.<span class="blue">floor</span>((<span
+                        class="orange">start</span> + <span class="orange">end</span>) / <span class="orange">2</span>)
     <span class="purple">let</span> middleNumber = <span class="orange">arr</span>[indexMiddle];
     <span class="purple">if</span> (<span class="orange">start</span> > <span class="orange">end</span>) {
     <span class="purple">return</span> -<span class="orange">1</span>
     }
     <span class="purple">if</span> (<span class="orange">n</span> > middleNumber) {
-    <span class="purple">return</span> <span class="blue">binarySearch</span>(<span class="orange">n</span>, <span class="orange">arr</span>, indexMiddle + <span class="orange">1</span>, <span class="orange">end</span>)
+    <span class="purple">return</span> <span class="blue">binarySearch</span>(<span class="orange">n</span>, <span
+                        class="orange">arr</span>, indexMiddle + <span class="orange">1</span>, <span
+                        class="orange">end</span>)
     }
-    <span class="purple">if</span> (<span class="orange">n</span> < middleNumber) {
-    <span class="purple">return</span> <span class="blue">binarySearch</span>(<span class="orange">n</span>, <span class="orange">arr</span>, <span class="orange">start</span>, indexMiddle - <span class="orange">1</span>)
+    <span class="purple">if</span> (<span class="orange">n</span> middleNumber) {
+    <span class="purple">return</span> <span class="blue">binarySearch</span>(<span class="orange">n</span>, <span
+                        class="orange">arr</span>, <span class="orange">start</span>, indexMiddle - <span
+                        class="orange">1</span>)
     }
     <span class="purple">return</span> indexMiddle
 }
