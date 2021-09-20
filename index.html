@@ -71,7 +71,7 @@
                     my
                     life and it does not inspire me at all.
                     Around the same time, my husband started programming and soon found his first job.
-                    At first,  it was a completely incomprehensible topic for me, but over time it fascinated me more and
+                    At first, it was a completely incomprehensible topic for me, but over time it fascinated me more and
                     more.
                     Until one moment I realized that I wanted to be a programmer. I really like the gamedev section, but
                     at
@@ -83,42 +83,67 @@
             </div>
             <div class="intelligence_skills skills">
                 <h2 class="skills_title"> Skills</h2>
-                <ul class="skills_list list">
-                    <li>
-                        <p class="element">
-                            JavaScript
-                        </p>
-                        <p class="element">
-                            TypeScript
-                        </p>
-                        <p class="element">
-                            HTML
-                        </p>
-                        <p class="element">
-                            CSS
-                        </p>
-                        <p class="element">
-                            BEM
-                        </p>
-                        <p class="element">
-                            Git
-                        </p>
-                        <p class="element">
-                            GitHub
-                        </p>
-                        <p class="element">
-                            WebStorm
-                        </p>
-                    </li>
+                <div class="skills_list list">
+                    <p class="element">
+                        JavaScript
+                    </p>
+                    <p class="element">
+                        TypeScript
+                    </p>
+                    <p class="element">
+                        HTML
+                    </p>
+                    <p class="element">
+                        CSS
+                    </p>
+                    <p class="element">
+                        BEM
+                    </p>
+                    <p class="element">
+                        Git
+                    </p>
+                    <p class="element">
+                        GitHub
+                    </p>
+                    <p class="element">
+                        WebStorm
+                    </p>
 
-
-                </ul>
+                </div>
             </div>
             <div class="intelligence_code code">
                 <h2 class="code_title">Code examples</h2>
-                <a href="https://github.com/DariaMalina">
-                    <img src="image/free-icon-github-2111425.svg" alt="icon-github" class="code_icon-link">
-                </a>
+                <p>You can see my code and work here:</p><a href="https://github.com/DariaMalina">
+                <img src="image/free-icon-github-2111425.svg" alt="icon-github" class="code_icon-link">
+            </a>
+                <p> Here you can see the implemented applications:</p>
+                <div class="applications">
+                    <a href="https://dariamalina-drum-kit.netlify.app/">
+                        <img src="image/planet-saturn.svg" alt="icon-github" class="code_icon-link">
+                    </a>
+                    <a href="https://dariamalina.github.io/memoji/">
+                        <img src="image/card-game.png" alt="icon-github" class="code_icon-link">
+                    </a>
+                </div>
+                <p>Well, a piece of algorithms:</p>
+                <pre class="code_styling"> <code>
+<span class="purple">const</span> <span class="blue">binarySearch</span> = (<span class="orange">n</span>, <span class="orange">arr</span>, <span class="orange">start</span>, <span class="orange">end</span>: ) => {
+    <span class="purple">let</span> indexMiddle = <span class="red">Math</span>.<span class="blue">floor</span>((<span class="orange">start</span> + <span class="orange">end</span>) / <span class="orange">2</span>)
+    <span class="purple">let</span> middleNumber = <span class="orange">arr</span>[indexMiddle];
+    <span class="purple">if</span> (<span class="orange">start</span> > <span class="orange">end</span>) {
+    <span class="purple">return</span> -<span class="orange">1</span>
+    }
+    <span class="purple">if</span> (<span class="orange">n</span> > middleNumber) {
+    <span class="purple">return</span> <span class="blue">binarySearch</span>(<span class="orange">n</span>, <span class="orange">arr</span>, indexMiddle + <span class="orange">1</span>, <span class="orange">end</span>)
+    }
+    <span class="purple">if</span> (<span class="orange">n</span> < middleNumber) {
+    <span class="purple">return</span> <span class="blue">binarySearch</span>(<span class="orange">n</span>, <span class="orange">arr</span>, <span class="orange">start</span>, indexMiddle - <span class="orange">1</span>)
+    }
+    <span class="purple">return</span> indexMiddle
+}
+                </code></pre>
+
+
             </div>
 
             <div class="intelligence_english english">
@@ -131,7 +156,8 @@
         </main>
         <footer class="footer_link link">
             <ul class="link_list">
-                <li><a href="mailto:gluto68@gmail.com" class="link_email link"><img src="image/email.svg" alt="icon-email"
+                <li><a href="mailto:gluto68@gmail.com" class="link_email link"><img src="image/email.svg"
+                                                                                    alt="icon-email"
                                                                                     class="icon_email">
                 </a></li>
                 <li><a href="tel:+79158857569" class="link_phone link">
