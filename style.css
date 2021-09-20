@@ -17,41 +17,45 @@
 }
 
 .personal_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 9px 0 0 9px;;
     flex: 1;
     background: linear-gradient(0deg, rgba(63, 69, 69, 1) 0%, rgba(0, 0, 0, 1) 100%);
     color: var(--main-white-color);
     width: 30rem;
     height: 100rem;
     border: 1px solid rgb(7, 7, 7);
-    font-family: Font,sans-serif;
+    font-family: Font, sans-serif;
 }
 
 .skills_list {
-    margin-left: 0;
-    list-style: none;
-    counter-reset: li;
-    width: 25rem;
+    color: var(--main-gray-color);
+    border: 1px solid rgb(7, 7, 7);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
-.skills_list li {
-    position: relative;
-    margin-bottom: 1.5em;
-    border: 1px solid var(--main-gray-color);
-    padding: 0.6em;
-    border-radius: 2px;
-    background: #FEFEFE;
-    color: var(--main-gray-color);
-}
+
 
 .element {
-    text-align: center;
+    margin: 1rem;
 }
 
 .photo {
+    border-radius: 9px 0 0 9px;
     width: 100%;
 }
 
 .education {
+    border: 1px solid  var(--main-white-color);
+    width: 70%;
+    border-radius: 9px;
     font-weight: lighter;
 }
 
@@ -60,6 +64,7 @@
 }
 
 .general_information {
+    border-radius: 0 9px 9px 0;
     display: flex;
     flex-wrap: wrap;
     flex: 2;
@@ -121,11 +126,12 @@ a.code_icon_link {
 .footer_link {
     border-top: 1px solid var(--main-black-color);
     position: relative;
-    bottom: -4rem;
+    bottom: 1rem;
 }
 
 .link_list {
     list-style-type: none;
+    margin: 7px 0 0 0;
 }
 
 .link_list li {
@@ -154,8 +160,12 @@ a {
 }
 
 .contact {
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    display: flex;
+    margin: 2rem 0;
+    border: 1px solid var(--main-white-color);
+    border-radius: 9px;
+    width: 70%;
+
 }
 
 main {
@@ -171,7 +181,7 @@ main {
 }
 
 .nav_elem {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     line-height: 1;
 }
 
@@ -181,4 +191,24 @@ main {
 
 .code_icon-link {
     width: 2rem;
+}
+.code_styling{
+    padding: 1rem;
+    border: 1px solid var(--main-black-color);
+    border-radius: 9px;
+}
+a:hover{
+    text-decoration: underline;
+}
+.red{
+    color: #ff4242;
+}
+.blue{
+    color: #1f53ff;
+}
+.purple{
+    color: #8e1ff8;
+}
+.orange{
+    color: #ffa300;
 }
