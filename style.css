@@ -36,7 +36,7 @@
     border-radius: 9px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
 }
@@ -115,7 +115,7 @@
     align-items: center;
     justify-content: center;
     font-family: Arial, sans-serif;
-    padding: 0 25%;
+    padding: 0 20%;
 }
 
 
@@ -165,7 +165,7 @@ a {
     border: 1px solid var(--main-white-color);
     border-radius: 9px;
     width: 70%;
-
+    flex-direction: column;
 }
 
 main {
